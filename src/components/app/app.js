@@ -1,12 +1,15 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import ShopHeader from '../shop-header';
 import { HomePage, CartPage } from '../pages';
 
 import './app.css';
 
 const App = () => {
   return (
-    <Switch>
+    <main role='main' className='container'>
+      <ShopHeader numItems={2} total={996}/>
+      <Switch>
       <Route
         path="/"
         component={HomePage}
@@ -17,6 +20,8 @@ const App = () => {
         component={CartPage}
         />
     </Switch>
+    </main>
+    
   );
 };
 
