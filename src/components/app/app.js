@@ -7,21 +7,20 @@ import './app.css';
 
 const App = () => {
   return (
-    <main role='main' className='container'>
-      <ShopHeader numItems={2} total={996}/>
+    <main role="main" className="container">
+      <ShopHeader numItems={2} total={700}/>
       <Switch>
-      <Route
-        path="/"
-        component={HomePage}
-        exact />
+        <Route
+          path="/"
+          component={HomePage}
+          exact />
 
-      <Route
-        path="/cart"
-        component={CartPage}
-        />
-    </Switch>
+        <Route
+          path="/cart"
+          component={CartPage}
+          />
+      </Switch>
     </main>
-    
   );
 };
 
