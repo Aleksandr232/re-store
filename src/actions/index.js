@@ -55,5 +55,6 @@ const fetchBooks=(bookstoreService)=>()=>(dispatch)=>{
 };
 
 export {
-  fetchBooks
+  fetchBooks,
+  fetchBooksOld
 };
