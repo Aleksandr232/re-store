@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import BookListItem from '../book-list-item';
+import BookSearch from '../booksearch';
+
 
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -24,10 +26,17 @@ const BookList = ({ books, onAddedToCart }) => {
                 book={book}
                 onAddedToCart={() => onAddedToCart(book.id)}/>
             </li>
+            
+            
+            
+            
+           
           );
+          
         })
       }
     </ul>
+    
   );
 };
 
